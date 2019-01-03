@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="holder.sdk.com.addcatanimation.MainActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/target_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="14dp">
+
+        <ImageView
+            android:id="@+id/target_view_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_shop_car_selected" />
+        <TextView
+            android:id="@+id/target_view_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:layout_alignRight="@+id/target_view_imageview"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/add_cat_sum"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
